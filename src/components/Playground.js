@@ -36,6 +36,11 @@ export default function Playground(props) {
      <h2>Playground for web {cohort}</h2>
      <h3>{count}</h3>
      <button onClick={() => setCount(count + 1)}>increase</button>
+
+     <h3>the current weapon is scissors</h3>
+     <button>pick scissors</button>
+     <button>pick rock</button>
+     <button>pick paper</button>
     </div>
   )
 }
