@@ -19,7 +19,7 @@ export default function Playground(props) {
     <div className="container">
      <h2>Playground for web {cohort}</h2>
      <h3>{count}</h3>
-     <button>increase</button>
+     <button onClick={event => setCount(101)}>increase</button>
     </div>
   )
 }
