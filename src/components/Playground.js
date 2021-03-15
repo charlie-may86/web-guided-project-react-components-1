@@ -14,7 +14,7 @@ export default function Playground(props) {
   const {cohort} = props
   return (
     <div className="container">
-      {cohort}
+     <h2>Playground for web {cohort}</h2>
     </div>
   )
 }
