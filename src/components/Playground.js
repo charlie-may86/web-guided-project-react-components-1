@@ -13,11 +13,8 @@ import React from 'react'
 export default function Playground(props) {
   const {cohort} = props
   return (
-    <>
-      <div className="container"></div>
-      <div className="container"></div>
-      <div className="container"></div>
-      <div className="container"></div>
-    </>
+      <div className="container">
+        {cohort}
+      </div>
   )
 }
