@@ -32,6 +32,8 @@ function App(props) {
       <div>It is week {week}</div>
 
       <Playground cohort={cohort} />
+      <Playground cohort={65} />
+      <Playground cohort={5} />
     </div>
   )
 }
