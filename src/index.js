@@ -23,7 +23,12 @@ import { render } from 'react-dom'
 
 function App(props) {
   const {cohort, instructor} = props
-  return null
+  return (
+    <div className='container'>
+      <h1>Welcome to React, Web {cohort}</h1>
+      <h3>{instructor} welcomes you.</h3>
+    </div>
+  )
 }
 
 // we only tend once in application, normally
