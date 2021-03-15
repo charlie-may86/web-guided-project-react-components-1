@@ -33,6 +33,6 @@ function App(props) {
 
 // we only tend once in application, normally
 render(
-  <App cohort='37' instructor="Tony Stark" />,
+  <App cohort='37' instructor="Tony Stark" happy={true} />,
   document.querySelector('#root')
 )
