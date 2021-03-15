@@ -13,7 +13,7 @@ import React, {useState} from 'react'
 export default function Playground(props) {
 
   const [count, setCount] = useState(0) // good practice to use the word "set"
-  const [spinnerOn, setSpinnerOn] = useState(true)
+  const [spinnerOn, setSpinnerOn] = useState(false)
   // const theArray = useState(0)
   // const count = theArray[0]
   // const setCount = theArray[1]
@@ -24,8 +24,7 @@ export default function Playground(props) {
     return (
       <div className="container">
         loading...
-        {/* <button onClick={() => setSpinnerOn(false)}> */}
-        <button onClick={}>
+        <button onClick={() => setSpinnerOn(false)}>
           turn off loading spinner
         </button>
       </div>
