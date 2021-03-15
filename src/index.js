@@ -24,7 +24,7 @@ import { render } from 'react-dom'
 function App(props) {
   const {cohort, instructor, happy, week} = props
   return (
-    <div className='container'>
+    <div className='container' id={cohort}>
       <h1>Welcome to React, Web {cohort}</h1>
       <h3>{instructor} welcomes you.</h3>
       {happy ? <div>Very Happy</div> : <div>Not so happy</div>}
