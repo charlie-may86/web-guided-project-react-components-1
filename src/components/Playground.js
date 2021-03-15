@@ -13,7 +13,7 @@ import React, {useState} from 'react'
 export default function Playground(props) {
 
   const [count, setCount] = useState(0) // good practice to use the word "set"
-  const [spinnerOn, setSpinnerOn] = useState(false)
+  const [spinnerOn, setSpinnerOn] = useState(true)
   const [choice, setChoice] = useState('scissors')
   // const theArray = useState(0)
   // const count = theArray[0]
