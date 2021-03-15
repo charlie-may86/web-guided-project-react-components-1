@@ -22,14 +22,16 @@ import { render } from 'react-dom'
 */
 
 function App(props) {
+  const {cohort, instructor} = props
   return (
     <div className='container'>
-      <h1>Welcome to React, Web {props.cohort}</h1>
-      <h3>{props.instructor} welcomes you.</h3>
+      <h1>Welcome to React, Web {cohort}</h1>
+      <h3>{instructor} welcomes you.</h3>
     </div>
   )
 }
 
+// we only tend once in application, normally
 render(
   <App cohort='37' instructor="Tony Stark" />,
   document.querySelector('#root')
