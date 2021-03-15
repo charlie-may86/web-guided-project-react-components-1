@@ -37,6 +37,7 @@ export default function Playground(props) {
      <h2>Playground for web {cohort}</h2>
      <h3>{count}</h3>
      <button onClick={() => setCount(count + 1)}>increase</button>
+     <button onClick={() => setSpinnerOn(!spinnerOn)}>toggle spinner</button>
 
      <h3>the current weapon is {choice}</h3>
      <button onClick={() => setChoice('scissors')}>pick scissors</button>
