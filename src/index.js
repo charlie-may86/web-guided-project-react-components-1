@@ -35,6 +35,6 @@ function App(props) {
 
 // we only tend once in application, normally
 render(
-  <App cohort='37' instructor="Tony Stark" happy={false} week={2} />,
+  <App cohort='41' instructor="Tony Tiger" happy={true} week={2} />,
   document.querySelector('#root')
 )
