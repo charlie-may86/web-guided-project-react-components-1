@@ -14,6 +14,7 @@ export default function Playground(props) {
 
   const [count, setCount] = useState(0) // good practice to use the word "set"
   const [spinnerOn, setSpinnerOn] = useState(false)
+  const [choice, setChoice] = useState('scissors')
   // const theArray = useState(0)
   // const count = theArray[0]
   // const setCount = theArray[1]
@@ -37,7 +38,7 @@ export default function Playground(props) {
      <h3>{count}</h3>
      <button onClick={() => setCount(count + 1)}>increase</button>
 
-     <h3>the current weapon is scissors</h3>
+     <h3>the current weapon is {choice}</h3>
      <button>pick scissors</button>
      <button>pick rock</button>
      <button>pick paper</button>
