@@ -12,5 +12,10 @@ import React from 'react'
 
 export default function Playground(props) {
   const {cohort} = props
-  return 'playground' + cohort
+  return (
+    <div className="container"></div>
+    <div className="container"></div>
+    <div className="container"></div>
+    <div className="container"></div>
+  )
 }
