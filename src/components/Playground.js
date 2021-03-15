@@ -13,12 +13,21 @@ import React, {useState} from 'react'
 export default function Playground(props) {
 
   const [count, setCount] = useState(0) // good practice to use the word "set"
+  const [spinnerOn, setSpinnerOn] = useState(true)
   // const theArray = useState(0)
   // const count = theArray[0]
   // const setCount = theArray[1]
-
-
+  
   const {cohort} = props
+
+  if(spinnerOn) {
+    return (
+      <div className="container">
+        loading...
+      </div>
+    )
+  }
+
   return (
     <div className="container">
      <h2>Playground for web {cohort}</h2>
