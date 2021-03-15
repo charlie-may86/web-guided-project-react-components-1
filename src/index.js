@@ -30,6 +30,6 @@ function App(props) {
 }
 
 render(
-  <App cohort='37' />,
+  <App cohort='37' instructor="Tony Stark" />,
   document.querySelector('#root')
 )
