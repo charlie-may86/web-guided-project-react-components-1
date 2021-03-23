@@ -1,5 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
+import Playground from './components/Playground'
 
 /*
 💥💥💥 Rules when DECLARING a React component 💥💥💥
@@ -21,15 +22,25 @@ import { render } from 'react-dom'
   - Don't forget all tags need to close correctly
 */
 
+
+//we have tons of these
 function App(props) {
+  const { cohort, instructor, happy, age } = props;
   return (
     <div className='container'>
-      <h1>Welcome to React, Web {props.cohort}</h1>
+      <h1 id='mainHeading'>Welcome to React, Web {cohort}</h1>
+      <div>{instructor} welcomes you to class.</div>
+      
+      {happy ? <div>Today is a good day!</div> : <div>It is Monday after all</div>}
+
+      <h2>My brother is {age} years old today.</h2>
+      <Playground cohort = {cohort}></Playground>
     </div>
   )
 }
 
+// usely happens only once per app
 render(
-  <App cohort='pt27' />,
-  document.querySelector('#root')
+  <App cohort='Web 32' instructor='Charlie' happy = {true} age = {34}/>, // argument number one is an element or a tree of elements
+  document.querySelector('#root') //dom element you want to inject the elements into
 )
